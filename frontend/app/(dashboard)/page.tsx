@@ -15,7 +15,7 @@ export default function Page() {
                     toast({
                         title: "Logged out",
                         description: "You have been logged out.",
-                        variant: "destructive",
+                        variant: "default",
                     })
                 }}
             >

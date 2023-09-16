@@ -19,7 +19,6 @@ const loginFormSchema = z.object({
 })
 
 export default function Page() {
-    const router = useRouter()
     const [isLoading, setLoading] = useState<boolean>(false)
 
     const form = useForm<z.infer<typeof loginFormSchema>>({
@@ -84,7 +83,7 @@ export default function Page() {
                                     type={"submit"}
                                 >
                                     {isLoading && <Loader2 className={"absolute left-4 h-6 w-6 animate-spin"} />}
-                                    Login
+                                    <span className={"text-input"}>Login</span>
                                 </Button>
                             </div>
                         </form>

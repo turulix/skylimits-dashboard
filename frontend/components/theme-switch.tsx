@@ -37,7 +37,7 @@ export function ThemeSwitch({ className }: { className?: string }) {
                         "flex items-center h-5 top-0 left-0 w-5 absolute opacity-100 data-[state=unchecked]:opacity-0 text-background"
                     }
                 >
-                    <SunIcon />
+                    <MoonIcon />
                 </span>
                 <span
                     data-state={checked ? "checked" : "unchecked"}
@@ -45,7 +45,7 @@ export function ThemeSwitch({ className }: { className?: string }) {
                         "flex items-center h-5 top-0 right-0 w-5 absolute opacity-100 data-[state=checked]:opacity-0 text-primary"
                     }
                 >
-                    <MoonIcon />
+                    <SunIcon />
                 </span>
             </button>
         </NoSSR>
